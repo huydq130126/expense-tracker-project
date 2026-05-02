@@ -45,7 +45,19 @@ def signup(payload: SignupRequest):
         auth_client.create_user_with_email_and_password(payload.email, payload.password)
         return {"message": "Signup Successfully"}
     except Exception as e:
-        raise HTTPException(status_code = 400, detail=str(e))
+        error_message = str(e)
+        if "EMAIL_EXISTS" in error_message:
+            detail = "This email is already registered. Please use a different email or sign in."
+        elif "WEAK_PASSWORD" in error_message:
+            detail = "Password is too weak. Please use at least 6 characters."
+        elif "INVALID_EMAIL" in error_message:
+            detail = "Invalid email format. Please check your email address."
+        elif "TOO_MANY_ATTEMPTS_TRY_LATER" in error_message:
+            detail = "Too many attempts. Please try again later."
+        else:
+            detail = "Registration failed. Please try again."
+        logger.error(f"Signup error: {error_message}")
+        raise HTTPException(status_code = 400, detail=detail)
 
 @router.post("/login", response_model=AuthResponse)
 def login(payload: LoginRequest):
