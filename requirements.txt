@@ -1,8 +1,10 @@
 fastapi
-uvicorn
+uvicorn[standard]
 pydantic
 pydantic-settings
 firebase-admin
+pyrebase4
 requests
 email-validator
-Pyrebase4
+python-multipart
+python-dotenv
