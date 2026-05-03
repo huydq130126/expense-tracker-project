@@ -125,10 +125,6 @@ Mở file `frontend/index.html` bằng **Live Server** (extension trong VS Code)
 
 > Hoặc mở trực tiếp file `index.html` trong trình duyệt cũng được.
 
-## 🎬 Video Demo
-
-📹 [Link video demo](https://youtu.be/YOUR_VIDEO_LINK)
-
 ## 🛠️ Công nghệ sử dụng
 
 - **Backend:** FastAPI, Python
@@ -136,3 +132,9 @@ Mở file `frontend/index.html` bằng **Live Server** (extension trong VS Code)
 - **Authentication:** Firebase Authentication (Email/Password + Google)
 - **Database:** Cloud Firestore
 - **SDK:** Firebase Admin SDK, Pyrebase4
+
+## 🎬 Video Demo
+
+
+https://github.com/user-attachments/assets/4fd60b21-a78d-497f-85c1-6ef48c324718
+
