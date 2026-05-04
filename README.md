@@ -136,5 +136,9 @@ Mở file `frontend/index.html` bằng **Live Server** (extension trong VS Code)
 ## 🎬 Video Demo
 
 
-https://github.com/user-attachments/assets/4fd60b21-a78d-497f-85c1-6ef48c324718
+
+
+https://github.com/user-attachments/assets/204b8918-c77c-43d5-a29b-abf68cdb5a92
+
+
 
